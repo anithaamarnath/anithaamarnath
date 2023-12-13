@@ -104,3 +104,8 @@ footer {
     margin: 10px;
   }
 }
+@media (max-width: 768px) {
+  .grid-container-volunteer {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
