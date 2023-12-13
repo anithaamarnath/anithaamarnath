@@ -1,0 +1,205 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: #333;
+      margin-left: -1px;
+    }
+
+    .event {
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .event::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      background: #333;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .event-content {
+      position: relative;
+      max-width: 400px;
+      padding: 15px;
+      background: #f4f4f4;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timeline">
+    <div class="event">
+      <div class="event-content">
+        <h3>Event 1</h3>
+        <p>Description of Event 1.</p>
+        <p>Date: January 1, 2023</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3>Event 2</h3>
+        <p>Description of Event 2.</p>
+        <p>Date: February 15, 2023</p>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Responsive Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        scroll-behavior: smooth; /* Enable smooth scrolling */
+      }
+    </style>
+
+    <script>
+      // Optional: Add smooth scroll behavior to anchor links within the page
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Your Website</h1>
+    </header>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Responsive Website</title>
+  <style>
+    body {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Website</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>This is the main content for the home section.</p>
+  </section>
+
+  <footer>
+    &copy; 2023 Your Website
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+    <footer>&copy; 2023 Your Website</footer>
+  </body>
+</html>
+
+
+#home {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px; /* Adjust the max-width as needed */
+}
+
+#home img {
+max-width: 100%; /* Make sure images don't exceed their container */
+height: auto;
+}
+
+#home div {
+margin-bottom: 20px;
+}
+img {
+border-radius: 50%;
+}
+
+a i.fa {
+color: white;
+}
+section {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100vh;
+padding: 20px;
+}
+
+.flex-container {
+display: flex;
+flex-direction: column; /* Stack items vertically */
+align-items: center; /* Center items horizontally */
+}
+
+<div class="education-time">
+  <div class="event-content">
+    <h3>BCIT</h3> <i class="fa-solid fa-graduation-cap"></i>
+    <p>Applied Software Development</p>
+    <p><span>March 2021</span> - <span>June 2023</span></p>
+  </div>
+</div>
