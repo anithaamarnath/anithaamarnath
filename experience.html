@@ -1,150 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website - Home</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="experience.css"> 
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-</head>
-<boby>
-  <nav>
-    <a href="index.html#home">Home</a>
-    <a href="experience.html#experience">Experience</a>
-    <a href="project.html#project">Project</a>
-    <a href="project.html#skill">Skill</a>
-    <a href="vonlunteer.html#volunteer">Volunteer</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Timeline</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/experience.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="hamburger" onClick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-<section id="experience">
-    <div class="timeline">
-        <div class="container left">
-            <div class="date">2023</div>
-            <i class="icon fa fa-graduation-cap"></i>
-          <div class="content">
-            <h2>Applied Software Developer Part-Time</h2>
-            <h3>BCIT, BC, Canada</h3>
-            <p>
-             Sep 2023 - Sep 2025
-            </p>
+      <ul id="menu">
+        <li><a href="index.html#home" onClick="setActive(this)"> Home</a></li>
+        <li>
+          <a href="experience.html#experience" onClick="setActive(this)">
+            Experience</a
+          >
+        </li>
+        <li>
+          <a href="project.html#project" onClick="setActive(this)"> Project</a>
+        </li>
+        <li>
+          <a href="skill.html#skill" onClick="setActive(this)">Skill</a>
+        </li>
+        <li>
+          <a href="volunteer.html#volunteer" onClick="setActive(this)"
+            >Volunteer</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section id="experience">
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3><span class="date">2024</span>FullStack Developer</h3>
+            <p>CSOF, US</p>
           </div>
         </div>
-        <div class="container right">
-            <div class="date">2023</div>
-            <i class="icon fa fa-tasks"></i>
-          <div class="content">
-            <h2>Software Developer</h2>
-            <h3>Traction Complete, BC, Canada</h3>
-            <p>
-             Mar 2021 - Jun 2023
-            </p>
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3><span class="date">2023</span>Software Developer</h3>
+            <p>YummyDash, BC, Canada</p>
           </div>
         </div>
-        <div class="container left">
-            <div class="date">2021</div>
-            <i class="icon fa fa-tasks"></i>
-            <div class="content">
-              <h2>Node JS</h2>
-              <h3>COMIT, BC, Canada</h3>
-              <p>
-               Jan 2021 - Apr 2021
-              </p>
-            </div>
-          </div>
-        <div class="container right">
-          <div class="date">2020</div>
-          <i class="icon fa fa-tasks"></i>
-          <div class="content">
-            <h2>Software Developer</h2>
-            <h3>Ethony Enterprise, BC, Canada</h3>
-            <p>
-             Oct 2020 - Jan 2021
-            </p>
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>
+              <span class="date">2023</span>Applied Software Developer Part-Time
+            </h3>
+            <p>BCIT, BC, Canada</p>
           </div>
         </div>
-        <div class="container left">
-            <div class="date">2020</div>
-            <i class="icon fa fa-tasks"></i>
-            <div class="content">
-              <h2>Software Developer</h2>
-              <h3>Upath, BC, Canada</h3>
-              <p>
-               Jul 2020 - Sep 2020
-              </p>
-            </div>
-        </div>
-        <div class="container right">
-          <div class="date">2019</div>
-          <i class="icon fa fa-tasks"></i>
-          <div class="content">
-            <h2>Software Quality Assurance Test Engineer</h2>
-            <h3>Kater Technologies, BC, Canada</h3>
-            <p>
-             Jul 2019 - Oct 2019
-            </p>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3><span class="date">2023</span>Software Developer</h3>
+            <p>Traction Complete, BC, Canada</p>
           </div>
         </div>
-        <div class="container left">
-            <div class="date">2019</div>
-            <i class="icon fa fa-graduation-cap"></i>
-          <div class="content">
-            <h2>Web Development Diploma</h2>
-            <h3>Lighthouse Labs, BC, Canada</h3>
-            <p>
-             Apr 2019 - June 2019
-            </p>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3><span class="date">2021</span>Node JS Developer</h3>
+            <p>COMIT, BC, Canada</p>
           </div>
         </div>
-        <div class="container right">
-            <div class="date">2018</div>
-            <i class="icon fa fa-graduation-cap"></i>
-          <div class="content">
-            <h2>Adobe In-Suite, Certification</h2>
-            <h3>Emily Carr University of Art and Design, BC, Canada</h3>
-            <p>
-             Dec 2018 - Feb 2019
-            </p>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3><span class="date">2020</span>Software Developer</h3>
+            <p>Ethony Enterprise, BC, Canada</p>
           </div>
         </div>
-        <div class="container left">
-            <div class="date">2015</div>
-            <i class="icon fa fa-tasks"></i>
-            <div class="content">
-              <h2>Quality Assurance Analyst</h2>
-              <h3>Perpetro Ltd, TN, Canada</h3>
-              <p>
-               Jun 2015 - Sep 2017
-              </p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="date">2014</div>
-            <i class="icon fa fa-graduation-cap"></i>
-          <div class="content">
-            <h2>SRM Univeristy</h2>
-            <h3>Master of Information Technology, TN, India</h3>
-            <p>
-             Sep 2012 - May 2014
-            </p>
+
+        <!-- Timeline Item 5 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3><span class="date">2020</span>Software Developer</h3>
+            <p>Upath, BC, Canada</p>
           </div>
         </div>
-        <div class="container left">
-            <div class="date">2012</div>
-            <i class="icon fa fa-graduation-cap"></i>
-          <div class="content">
-            <h2>Bachelor of Information Technology</h2>
-            <h3>Mahendra Enginering College for Women, TN, India</h3>
-            <p>
-             Aug 2008 - May 2012
-            </p>
+
+        <!-- Timeline Item 6 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>
+              <span class="date">2019</span>Software Quality Assurance Test
+              Engineer
+            </h3>
+            <p>Kater Technologies, BC, Canada</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 7 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3><span class="date">2019</span>Web Development Diploma</h3>
+            <p>Lighthouse Labs, BC, Canada</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 8 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3><span class="date">2018</span>Adobe In-Suite Certification</h3>
+            <p>Emily Carr University of Art and Design, BC, Canada</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 9 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3><span class="date">2015</span>Frontend developer</h3>
+            <p>Perpetro Ltd, TN, Canada</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 10 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>
+              <span class="date">2014</span>Master of Information Technology
+            </h3>
+            <p>SRM University, TN, India</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 11 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>
+              <span class="date">2012</span>Bachelor of Information Technology
+            </h3>
+            <p>Mahendra Engineering College for Women, TN, India</p>
           </div>
         </div>
       </div>
-</section>
-<footer>&copy; 2023 anitha</footer>
-</boby>
+    </section>
+    <footer>&copy; 2024 Anitha</footer>
+  </body>
 </html>
