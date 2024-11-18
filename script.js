@@ -41,21 +41,3 @@ window.addEventListener("resize", () => {
     }
 });
 
-const techStackImages = [
-    'https://via.placeholder.com/50', // Replace with tech stack icons
-    'https://via.placeholder.com/50',
-    'https://via.placeholder.com/50',
-    'https://via.placeholder.com/50',
-    'https://via.placeholder.com/50',
-  ];
-  
-  const circle = document.getElementById('circle');
-  
-  techStackImages.forEach((src, index) => {
-    const img = document.createElement('img');
-    img.src = src;
-    img.style.transform = `rotate(${index * (360 / techStackImages.length)}deg) translate(120px) rotate(-${index * (360 / techStackImages.length)}deg)`;
-    circle.appendChild(img);
-  });
-  
-
