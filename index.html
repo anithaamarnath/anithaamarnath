@@ -9,90 +9,123 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <link rel="stylesheet" href="home.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="index.html#home">Home</a>
-      <a href="experience.html#experience">Experience</a>
-      <a href="project.html#project">Project</a>
-      <a href="skill.html#skill">Skill</a>
-      <a href="volunteer.html#volunteer">Volunteer</a>
+    <nav class="navbar">
+      <div class="hamburger" onClick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <ul id="menu">
+        <li><a href="index.html#home" onClick="setActive(this)"> Home</a></li>
+        <li>
+          <a href="experience.html#experience" onClick="setActive(this)">
+            Experience</a
+          >
+        </li>
+        <li>
+          <a href="project.html#project" onClick="setActive(this)"> Project</a>
+        </li>
+      </ul>
     </nav>
-    <header id="home">
-      <video width="320" height="240" controls controlsList="nodownload">
-        <source src="anitha.mp4" type="video/mp4">
-    
-        Your browser does not support the video tag.
-      </video>
-      <h1>Anitha Amarnath</h1>
-      <h2>Software Engineer</h2>
-      <p>Surrey, BC, Canada</p>
-      <br />
 
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-envelope">anithaamarnath04@gmail.com</i>
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-phone">778-887-8472</i>
-      </a>
-     
-      <br />
-      <a
-        href="https://www.linkedin.com/in/anitha-amarnath/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-      <a
-        href="https://github.com/anithaamarnath"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a
-      href="https://www.salesforce.com/trailblazer/aamarnath1"
-      target="_blank"
-      rel="noopener noreferrer"
-      style=" color:#000000"
-    > <i class="fa fa-cloud" aria-hidden="true"></i>
-    </a>
-    </header>
+    <section id="home">
+      <!-- Header Section -->
+      <div class="header">
+        <h1>Anitha Amarnath</h1>
+        <p>Software Engineer</p>
+        <div class="contact-details">
+          <a href="mailto:anithaamarnath04@gmail.com">
+            <i class="fa fa-envelope"></i> anithaamarnath04@gmail.com
+          </a>
+          <a href="tel:778-887-8472">
+            <i class="fa fa-phone"></i> 778-887-8472
+          </a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/anitha-amarnath/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/anithaamarnath"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            href="https://www.salesforce.com/trailblazer/aamarnath1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-cloud"></i>
+          </a>
+        </div>
+      </div>
 
-    <section>
-      <p>
-        Experienced software developer with a strong commitment to continuous
-        learning and collaboration. I hold a Master's degree in computer science
-        and have further enhanced my skills through various certificate
-        programs, including Web development with LighthouseLab, and a Product
-        Developer Certificate I with Salesforce. I am dedicated to staying
-        updated with the latest industry trends and technologies to design and
-        implement high-quality software applications, with a focus on user
-        experience and functionality. I thrive in collaborative environments and
-        enjoy working closely with cross-functional teams to deliver exceptional
-        results
-      </p>
+      <!-- Grid Section -->
+      <div class="grid-container">
+        <!-- Left Section: Video -->
+        <div class="media">
+          <video width="100%" height="auto" controls controlsList="nodownload">
+            <source src="images/anitha.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Right Section: Summary and Tech Stack -->
+        <div class="summary">
+          <h2>Summary</h2>
+          <p>
+            Experienced software developer with a Master’s in Computer Science,
+            committed to continuous learning and collaboration. I’ve enhanced my
+            skills through certifications, including web development at
+            Lighthouse Labs and a Salesforce Platform Developer I Certificate.
+            Dedicated to designing high-quality, user-focused software, I stay
+            updated with industry trends to deliver innovative and functional
+            applications.
+          </p>
+          <h3>Tech Stack</h3>
+          <div class="tech-stack">
+            <img src="images/java.png" alt="Java" title="Java" />
+            <img
+              src="images/saleforce.png"
+              alt="Salesforce"
+              title="Salesforce"
+            />
+            <img
+              src="images/Adobe In-Suite.png"
+              alt="Adobe In-suite"
+              title="Adobe In-suite"
+            />
+            <img src="images/mern.png" alt="MERN" title="MERN" />
+            <img src="images/python.png" alt="python" title="python" />
+            <img src="images/testing.png" alt="testing" title="testing" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>&copy; 2023 anitha</footer>
+    <footer>&copy; 2024 anitha</footer>
 
     <!-- Include SmoothScroll.js library -->
-    <script src="smooth-scroll.polyfills.min.js"></script>
+    <!-- <script src="smooth-scroll.polyfills.min.js"></script> -->
 
     <!-- Initialize SmoothScroll with options -->
-    <script>
+    <!-- <script>
       var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 800, // Adjust the scrolling speed
         speedAsDuration: true, // Use speed as the animation duration
       });
-    </script>
+    </script> -->
   </body>
 </html>

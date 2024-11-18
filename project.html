@@ -5,88 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>anithaamarnath</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/project.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="index.html#home">Home</a>
-      <a href="experience.html#experience">Experience</a>
-      <a href="project.html#project">Project</a>
-      <a href="skill.html#skill">Skill</a>
-      <a href="volunteer.html#volunteer">Volunteer</a>
+    <nav class="navbar">
+      <div class="hamburger" onClick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <ul id="menu">
+        <li><a href="index.html#home" onClick="setActive(this)"> Home</a></li>
+        <li>
+          <a href="experience.html#experience" onClick="setActive(this)">
+            Experience</a
+          >
+        </li>
+        <li>
+          <a href="project.html#project" onClick="setActive(this)"> Project</a>
+        </li>
+      </ul>
     </nav>
 
     <section id="project">
-      <div class="grid-container">
-       
-        <div class="card">
-          <img src="yummyFront.png" alt="Yummydash App Image" class="thumbnail" > 
-          <h3><a href="https://yummydash-frontend-git-main-teamup3batchs-projects.vercel.app/" target="_blank">Yummy Dash</a></h3>
-          <p>The Yummy Dash is an online food delivery web application. This web application will enable users to browse, order, and enjoy a wide variety of dishes from from their favourite local restaurants, all from their comfort of their homes.</p>
-          <p><b>Technologies</b> <span>React, Redux, Material UI, Javascript, Mapbox</span></p>
-        </div>
-        <div class="card">
-          <img src="backend.png" alt="Backend App Image" class="thumbnail">
-          <h3><a href="https://yummydash-frontend-git-main-teamup3batchs-projects.vercel.app/" target="_blank">Yummy Dash Backend</a></h3>
-          <p>Food Delivery App inspired from the popular app. This app will connect customers, restaurants, and deliver seamlessly, offering a convenient and efficient food delivery experience</p>
-          <p><b>Technologies</b> <span>Express, NodeJS, Stripe,MongoDB</span></p>
-        </div>
-  
-        <div class="card">
-          <img src="madrasspice.png" alt="Madras spice App Image" class="thumbnail">
-          <h3><a href="https://madrasspice.ca/" target="_blank">Madras Spice</a></h3>
-          <p>Madras Spice, a restaurant situated in vancouver, BC, has a vibrant static website. The site serves as an online presence for the client and has been running successfully, showcasing the restaurant's offerings and services.</p>
-          <p><b>Technologies</b> <span>HTML,SASS,Javascript PHP </span></p>
-        </div>
-
-        <div class="card">
-          <img src="dosadelight.png" alt="Dosa delight App Image" class="thumbnail">
-          <h3><a href="https://dosadelight.ca/" target="_blank">Dosa Delight</a></h3>
-          <p>Dosa Delight, a restaurant situated in Langley, BC, has a vibrant static website. The site serves as an online presence for the client and has been running successfully, showcasing the restaurant's offerings and services</p>
-          <p><b>Technologies</b> <span> HTML,SASS,Javascript PHP </span></p>
-        </div>
-        <div class="card">
-          <img src="cardgame.png" alt="Meal App Image" class="thumbnail">
-          <h3><a href="https://github.com/juliantomlin/card_game_midterm" target="_blank">Card Game</a></h3>
-          <p>A Game app that allows players to play card games against other players. Our Mid term project developed using a Front end Html, CSS,Bootstrap , JavaScript and EJS and middle ware Node Knex and Backend Psql</p>
-          <p><b>Technologies</b> <span>HTML,CSS,Bootstrap,JavaScript, EJS Node Knex and Backend Psql</span></p>
-        </div>
-        <div class="card">
-          <img src="Home.png" alt="Meal App Image" class="thumbnail">
-          <h3><a href="https://github.com/procadiana/MealPrep" target="_blank">Meal Prep </a></h3>
-          <p>A food app that helps plan your meals in advance and create your grocery list using a recipes API. The app will generate a set of easy recipes according to the user preferences and needs. The user can save recipes to their favorite list and customize their meal plan</p>
-          <p><b>Technologies</b> <span>Axios, Edamam API https://www.edamam.com/, React, Reactstrap,Ruby on rails, Postgres. </span></p>
-        </div>
-        <div class="card">
-          <img src="tweeter-home-page.png" alt="Tweeter App Image" class="thumbnail">
-          <h3><a href="https://github.com/anithaamarnath/tweeter" target="_blank">Tweeter</a></h3>
-          <p>A Twetter app is a Single Page Application.</p>
-          <p><b>Technologies</b> HTML, CSS, Bootstraps,Ajax, Jquery Node and Backend Non- SQL Mongo DB</p>
-        </div>
-        <div class="card">
-          <img src="tiny.png" alt="Tiny App Image" class="thumbnail">
-          <h3><a href="https://github.com/anithaamarnath/tinyproject" target="_blank">Tiny App</a></h3>
-          <p>A Tiny app is a Full stack web development.</p>
-          <p><b>Technologies</b> HTML,CSS, EJS, Node JS, Express</p>
-        </div>
-        <div class="card">
-          <img src="products_listing_page.png" alt="Jungle App Image" class="thumbnail">
-          <h3><a href="https://github.com/anithaamarnath/jungle-rails" target="_blank">Jungle</a></h3>
-          <p>E-Commerce App that allows user to login and purchase any products category that list in app.</p>
-          <p><b>Technologies</b> Ruby on rails , Active record,EJS , HTML and CSS</p>
-        </div>
-        <div class="card">
-          <img src="chat.png" alt="Chatty App Image" class="thumbnail">
-          <h3><a href="https://github.com/anithaamarnath/Chatty-App" target="_blank">Chatty App</a></h3>
-          <p>Chatty App is a primarily client side single page app.</p>
-          <p><b>Technologies</b> React, JS, and WebSockets - with a small HTML and CSS framework provided</p>
-        </div>
+      <div>
+        <!-- Add the table here -->
+        <h2>Project Summary Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Technologies</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+              <td>KindSettle</td>
+              <td>React.js, Redux, Node.js, Express.js, Couchbase, TypeScript, Zod, JWT Authentication, Nodemailer, HTML5, CSS3, Material-UI, React Helmet, Redux-Thunk</td>
+              </td>
+              <td>
+                <a
+                  href="https://kindsettle.com/"
+                  target="_blank"
+                  >Live</a
+                >
+                <br/>
+                <a
+                  href="https://github.com/towaquimbayo/KindSettle"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Yummy Dash</td>
+              <td>React, Redux, Material UI, JavaScript, Mapbox</td>
+              <td>
+                <a
+                  href="https://github.com/TeamUp3Batch/yummydash-frontend"
+                  target="_blank"
+                  >Live</a
+                > <br/>
+                <a
+                href="https://github.com/TeamUp3Batch/yummydash-frontend"
+                target="_blank"
+                >Github</a
+              >
+              </td>
+            </tr>
+            <tr>
+              <td>Yummy Dash</td>
+              <td>Express, NodeJS, Stripe, MongoDB</td>
+              <td>
+                <a
+                  href="https://yummydash-frontend-git-main-teamup3batchs-projects.vercel.app/"
+                  target="_blank"
+                  >Live</a
+                >
+          
+                <a
+                href="https://github.com/TeamUp3Batch/yummydash-backend"
+                target="_blank"
+                >Github</a
+              >
+              </td>
+            </tr>
+            <tr>
+              <td>Madras Spice</td>
+              <td>HTML, SASS, JavaScript, PHP</td>
+              <td>
+                <a href="https://madrasspice.ca/" target="_blank">Live</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Dosa Delight</td>
+              <td>HTML, SASS, JavaScript, PHP</td>
+              <td>
+                <a href="https://dosadelight.ca/" target="_blank">Live</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Card Game</td>
+              <td>HTML, CSS, Bootstrap, JavaScript, EJS, Node, Knex, PSQL</td>
+              <td>
+                <a
+                  href="https://github.com/juliantomlin/card_game_midterm"
+                  target="_blank"
+                  >Github</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Meal Prep</td>
+              <td>React, Axios, Edamam API, Ruby on Rails, Postgres</td>
+              <td>
+                <a href="https://github.com/procadiana/MealPrep" target="_blank"
+                  >Github</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Tweeter</td>
+              <td>HTML, CSS, Bootstrap, Ajax, Jquery, Node, MongoDB</td>
+              <td>
+                <a
+                  href="https://github.com/anithaamarnath/tweeter"
+                  target="_blank"
+                  >Github</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Tiny App</td>
+              <td>HTML, CSS, EJS, NodeJS, Express</td>
+              <td>
+                <a
+                  href="https://github.com/anithaamarnath/tinyproject"
+                  target="_blank"
+                  >Github</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Jungle</td>
+              <td>Ruby on Rails, Active Record, EJS, HTML, CSS</td>
+              <td>
+                <a
+                  href="https://github.com/anithaamarnath/jungle-rails"
+                  target="_blank"
+                  >Github</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Chatty App</td>
+              <td>React, JS, WebSockets, HTML, CSS</td>
+              <td>
+                <a
+                  href="https://github.com/anithaamarnath/Chatty-App"
+                  target="_blank"
+                  >Github</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>WMDI</td>
+              <td>Web Accessibility, WCAG Guidelines</td>
+              <td>
+                <a href="https://wimdi.com/leadership/" target="_blank">Volunteer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>VAST</td>
+              <td>Responsive Web Design, User Experience</td>
+              <td>
+                <a href="https://www.vastbc.ca/aboutus#careers" target="_blank">Volunteer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
-
-    <footer>&copy; 2023 anitha</footer>
+    <footer>&copy; 2024 anitha</footer>
   </body>
 </html>

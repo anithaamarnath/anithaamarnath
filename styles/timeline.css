@@ -1,0 +1,122 @@
+\/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Timeline Line */
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #c9a0dc;
+    z-index: -1;
+}
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Positioning Left and Right */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Timeline Content */
+.timeline-content {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #5c88da;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+}
+
+/* Timeline Marker */
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #5c88da;
+    border: 0.9px solid #ffffff;
+    border-radius: 50%;
+    top: 20px;
+    z-index: 1;
+}
+
+/* Left Markers */
+.timeline-item:nth-child(odd):before {
+    right: -10px;
+}
+
+/* Right Markers */
+.timeline-item:nth-child(even):before {
+    left: -10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 20px; /* Move line to the side */
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px; /* Adjust padding for mobile */
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd):before,
+    .timeline-item:nth-child(even):before {
+        left: 10px; /* Adjust marker position */
+    }
+    
+    .timeline-item:nth-child(odd) {
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+}

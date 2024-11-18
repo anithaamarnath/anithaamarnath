@@ -1,0 +1,148 @@
+
+
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Timeline Line */
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #c9a0dc;
+    z-index: -1;
+}
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Positioning Left and Right */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Timeline Content */
+.timeline-content {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+}
+
+/* Timeline Marker */
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #5c88da;
+    border: 0.9px solid #ffffff;
+    border-radius: 50%;
+    top: 20px;
+}
+
+/* Left Markers */
+.timeline-item:nth-child(odd):before {
+    right: -10px;
+}
+
+/* Right Markers */
+.timeline-item:nth-child(even):before {
+    left: -10px;
+}
+
+/* Date positioning on desktop/laptop (default layout) */
+.timeline-content h3 .date {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+}
+
+.timeline-item:nth-child(odd) .timeline-content h3 .date {
+    right: -120px; /* Date positioned on the left */
+}
+
+.timeline-item:nth-child(even) .timeline-content h3 .date {
+    left: -120px; /* Date positioned on the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline:before {
+      left: 20px; /* Move line to the side */
+  }
+
+  .timeline-item {
+      width: 100%;
+      padding-left: 50px; /* Adjust padding for mobile */
+      text-align: right; /* Keep the content aligned to the right */
+      position: relative;
+    
+  }
+
+  .timeline-item:nth-child(odd):before,
+  .timeline-item:nth-child(even):before {
+      left: 10px; /* Adjust marker position */
+  }
+  
+  .timeline-item:nth-child(odd) {
+      left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+      left: 0;
+  }
+
+  .timeline-item .timeline-content {
+      text-align: right; /* Align content to the right */
+  }
+
+  /* For mobile: Date on left side and content on right side */
+  .timeline-content h3 .date {
+      position: relative;
+      left: -10px;
+      font-weight: bold;
+      top:-30px
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content h3 .date,
+  .timeline-item:nth-child(even) .timeline-content h3 .date {
+      text-align: center;
+      display: inline-block;
+      width: 100%; /* Ensure date takes up full width */
+  }
+  .timeline-item:nth-child(even) .timeline-content h3 .date {
+
+    left: 50%; /* Center the date */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    font-weight: bold;
+}
+
+  .timeline-item .timeline-content {
+      text-align: center;
+  }
+}
