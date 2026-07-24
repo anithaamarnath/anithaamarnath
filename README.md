@@ -106,10 +106,8 @@
 <p align="left">
   <img src="https://img.shields.io/badge/Salesforce-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="Salesforce"/>
   <img src="https://img.shields.io/badge/Apex-1798C1?style=for-the-badge&logo=salesforce&logoColor=white" alt="Apex"/>
- <img
-  src="https://img.shields.io/badge/LWC-Lightning_Web_Components-032D60?style=for-the-badge&logo=salesforce&logoColor=white"
-  alt="Lightning Web Components"
-/>
+ <img src="https://img.shields.io/badge/LWC-Lightning_Web_Components-032D60?style=for-the-badge&logo=salesforce&logoColor=white"
+  alt="Lightning Web Components"/>
   <img src="https://img.shields.io/badge/SOQL-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="SOQL"/>
   <img src="https://img.shields.io/badge/SOSL-1798C1?style=for-the-badge&logo=salesforce&logoColor=white" alt="SOSL"/>
 </p>
@@ -178,14 +176,7 @@
 
 ---
 
-## 🏅 GitHub Trophies
 
-<p align="center">
-  <img
-    src="https://github-profile-trophy.vercel.app/?username=anithaamarnath&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&row=1"
-    alt="Anitha's GitHub trophies"
-  />
-</p>
 
 ---
 
