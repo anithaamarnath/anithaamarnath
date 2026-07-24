@@ -123,50 +123,7 @@
 
 ---
 
-## 🚀 Featured Projects
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">🌐 Professional Portfolio</h3>
-      <p align="center">
-        A responsive personal portfolio website showcasing my professional experience, projects, skills and contact information.
-      </p>
-      <p align="center">
-        <strong>HTML • CSS • JavaScript</strong>
-      </p>
-      <p align="center">
-        <a href="YOUR_PORTFOLIO_REPOSITORY_URL">
-          <img src="https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
-        </a>
-        <a href="YOUR_PORTFOLIO_URL">
-          <img src="https://img.shields.io/badge/Live_Demo-2FB5F4?style=for-the-badge&logo=googlechrome&logoColor=white"/>
-        </a>
-      </p>
-    </td>
-
-    <td width="50%">
-      <h3 align="center">🤖 AI Job Match Tracker</h3>
-      <p align="center">
-        A full-stack application for tracking job applications, skills, ATS scores, interviews and job-search progress.
-      </p>
-      <p align="center">
-        <strong>React • TypeScript • Node.js • Express</strong>
-      </p>
-      <p align="center">
-        <a href="https://github.com/anithaamarnath/AI-Job-Match-Tracker">
-          <img src="https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
-        </a>
-      </p>
-    </td>
-  </tr>
-
-  
-    
-  </tr>
-</table>
-
----
 
 ## 🎓 Certifications and Programs
 
