@@ -156,21 +156,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=anithaamarnath&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400"
-    height="180"
-    alt="Anitha's GitHub Stats"
-  />
-
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=anithaamarnath&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400"
-    height="180"
-    alt="Anitha's Most Used Languages"
-  />
-</p>
 
 <p align="center">
   <img
