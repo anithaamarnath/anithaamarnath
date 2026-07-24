@@ -160,22 +160,22 @@
 
 <p align="center">
   <img
-    width="49%"
-    src="https://github-readme-stats.vercel.app/api?username=anithaamarnath&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"
-    alt="Anitha's GitHub stats"
+    src="https://github-readme-stats.vercel.app/api?username=anithaamarnath&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400"
+    height="180"
+    alt="Anitha's GitHub Stats"
   />
 
   <img
-    width="49%"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=anithaamarnath&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
-    alt="Anitha's most-used languages"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=anithaamarnath&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400"
+    height="180"
+    alt="Anitha's Most Used Languages"
   />
 </p>
 
 <p align="center">
   <img
     src="https://streak-stats.demolab.com?user=anithaamarnath&theme=tokyonight&hide_border=true"
-    alt="Anitha's GitHub streak"
+    alt="Anitha's GitHub Streak"
   />
 </p>
 
