@@ -103,13 +103,33 @@
 
 ### Salesforce
 
+### Salesforce
+
 <p align="left">
-  <img src="https://img.shields.io/badge/Salesforce-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="Salesforce"/>
-  <img src="https://img.shields.io/badge/Apex-1798C1?style=for-the-badge&logo=salesforce&logoColor=white" alt="Apex"/>
- <img src="https://img.shields.io/badge/LWC-Lightning_Web_Components-032D60?style=for-the-badge&logo=salesforce&logoColor=white"
-  alt="Lightning Web Components"/>
-  <img src="https://img.shields.io/badge/SOQL-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="SOQL"/>
-  <img src="https://img.shields.io/badge/SOSL-1798C1?style=for-the-badge&logo=salesforce&logoColor=white" alt="SOSL"/>
+  <img
+    src="https://img.shields.io/badge/Salesforce-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white"
+    alt="Salesforce"
+  />
+
+  <img
+    src="https://img.shields.io/badge/Apex-1798C1?style=for-the-badge&logo=salesforce&logoColor=white"
+    alt="Apex"
+  />
+
+  <img
+    src="https://img.shields.io/badge/LWC-Lightning_Web_Components-032D60?style=for-the-badge&logo=salesforce&logoColor=white"
+    alt="Lightning Web Components"
+  />
+
+  <img
+    src="https://img.shields.io/badge/SOQL-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white"
+    alt="SOQL"
+  />
+
+  <img
+    src="https://img.shields.io/badge/SOSL-1798C1?style=for-the-badge&logo=salesforce&logoColor=white"
+    alt="SOSL"
+  />
 </p>
 
 ### Testing and Quality Assurance
