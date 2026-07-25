@@ -18,11 +18,11 @@
 </h3>
 
 <p align="center">
-  <a href="www.linkedin.com/in/anitha-amarnath">
+  <a href="https://www.linkedin.com/in/anitha-amarnath">
     <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
 
-  <a href="YOUR_PORTFOLIO_URL">
+  <a href="https://anithaamarnath.github.io/anithaaamarnath/">
     <img src="https://img.shields.io/badge/PORTFOLIO-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/>
   </a>
 
