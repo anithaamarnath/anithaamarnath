@@ -41,9 +41,9 @@
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/coding.gif"
-    width="420"
-    alt="Developer coding illustration"
+    src="./assets/coding-loop.png"
+    alt="Anitha's Coding Journey"
+    width="900"
   />
 </p>
 
