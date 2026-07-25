@@ -18,13 +18,14 @@
 </h3>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/anitha-amarnath">
+  <a href="https://www.linkedin.com/in/anitha-amarnath/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
 
-  <a href="https://anithaamarnath.github.io/anithaaamarnath/">
+  <a href="https://anithaamarnath.github.io/anithaaamarnath/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/PORTFOLIO-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/>
   </a>
+</p>
 
 </p>
 
